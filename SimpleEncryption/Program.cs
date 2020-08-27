@@ -44,7 +44,13 @@ namespace SimpleEncryption
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string encryptStr = "This is a test!";
+            string decryptStr = "s eT ashi tist!";
+
+            Console.WriteLine(Encrypt(encryptStr, 2));
+            Console.WriteLine(Decrypt(decryptStr, 2));
+
+            Console.ReadKey();
         }
     }
 }
