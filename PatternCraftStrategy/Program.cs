@@ -47,6 +47,23 @@ namespace PatternCraftStrategy
         }
     }
 
+    public class Dragon : IUnit
+    {
+        public Dragon()
+        {
+            MoveBehavior = new Fly();
+            Position = 15;
+        }
+
+        public IMoveBehavior MoveBehavior { get; set; }
+        public int Position { get; set; }
+
+        public void Move()
+        {
+            MoveBehavior.Move(this);
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -58,7 +75,12 @@ namespace PatternCraftStrategy
 
             viking.MoveBehavior = new Fly();
             viking.Move();
+
+            IUnit dragon = new Dragon();
+            dragon.Move();
+
             Console.WriteLine(viking.Position);
+            Console.WriteLine(dragon.Position);
             Console.ReadKey();
         }
     }
