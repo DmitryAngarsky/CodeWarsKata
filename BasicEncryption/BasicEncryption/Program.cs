@@ -1,21 +1,19 @@
 ﻿using System;
 using System.Linq;
-using System.Text;
 
 namespace BasicEncryption
 {
-    class Program
+    internal static class Program
     {
-        public static string Encrypt(string text, int rule)
+        //public static string Encrypt(string text, int rule) =>
+        //    string.Concat(text.Select(c=>(char) ((c+rule)%256)));
+        
+        private static string Encrypt(string text, int rule)
         {
-            var cw = Encoding.ASCII.GetString(Encoding.ASCII.GetBytes(text).Select(b => (byte)(b + rule )).ToArray());
-            var test = Encoding.ASCII.GetString(text.Select(a => (byte)(a + rule & 255)).ToArray());
-            var test1 = text.Aggregate("", (a, b) => Encoding.ASCII.GetString(new byte[] { (byte)b }));
-
-            return test1;
+            return text.Aggregate("", (a, b) => a + (char)(b + rule & 255));
         }
 
-        static void Main(string[] args)
+        private static void Main()
         {
             string test = Encrypt("please encrypt me6", 2);
 
