@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "int32ToIPv4", "int32ToIPv4.csproj", "{E5797623-2E01-4325-8BC1-FF3BE31C4A1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5797623-2E01-4325-8BC1-FF3BE31C4A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5797623-2E01-4325-8BC1-FF3BE31C4A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5797623-2E01-4325-8BC1-FF3BE31C4A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5797623-2E01-4325-8BC1-FF3BE31C4A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
