@@ -38,18 +38,18 @@ namespace TtreesMaxSum
     {
         public static int MaxSum(TreeNode root)
         {
-            /* case 1 */
-            if (root.left == null && root.right == null)
-                return root.value;
+            //if (root == null)
+            //    return 0;
 
-            /* case 2 */
-            if (root.right == null)
-                return root.value + MaxSum(root.left);
-            else if (root.left == null)
-                return root.value + MaxSum(root.right);
+            //if (root.left == null && root.right == null)
+            //    return root.value;
 
-            /* case 3 */
-            return Math.Max(root.value + MaxSum(root.left), root.value + MaxSum(root.right));
+            //if (root.right == null)
+            //    return root.value + MaxSum(root.left);
+            //else if (root.left == null)
+            //    return root.value + MaxSum(root.right);
+
+            return root == null ? 0 : Math.Max(MaxSum(root.left), MaxSum(root.right));
         }
 
         static void Main(string[] args)
