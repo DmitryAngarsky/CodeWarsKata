@@ -38,21 +38,18 @@ namespace TtreesMaxSum
     {
         public static int MaxSum(TreeNode root)
         {
-            List<int> sumCollection = new List<int>();
+            /* case 1 */
+            if (root.left == null && root.right == null)
+                return root.value;
 
-            void Detour(TreeNode Root, int sum)
-            {
-                if(Root != null)
-                {
-                    Detour(Root.left, sum + Root.left.value);
-                    sumCollection.Add(sum);
+            /* case 2 */
+            if (root.right == null)
+                return root.value + MaxSum(root.left);
+            else if (root.left == null)
+                return root.value + MaxSum(root.right);
 
-                    Detour(Root.right, sum + Root.left.value);
-                    sumCollection.Add(sum);
-                }
-            }
-            Detour(root, 0);
-            return sumCollection.Count <= 0 ? 0 : sumCollection.Max(); // TODO: implementation
+            /* case 3 */
+            return Math.Max(root.value + MaxSum(root.left), root.value + MaxSum(root.right));
         }
 
         static void Main(string[] args)
