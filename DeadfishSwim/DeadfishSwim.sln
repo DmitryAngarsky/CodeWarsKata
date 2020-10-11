@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadfishSwim", "DeadfishSwim.csproj", "{D1B14CA1-59C8-4E1A-9E9F-3DEF124B35EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1B14CA1-59C8-4E1A-9E9F-3DEF124B35EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B14CA1-59C8-4E1A-9E9F-3DEF124B35EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B14CA1-59C8-4E1A-9E9F-3DEF124B35EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B14CA1-59C8-4E1A-9E9F-3DEF124B35EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
