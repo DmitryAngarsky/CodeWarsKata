@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeirdIPv6", "WeirdIPv6\WeirdIPv6.csproj", "{5F647E42-F863-404A-89CD-444B6CD3D4A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F647E42-F863-404A-89CD-444B6CD3D4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F647E42-F863-404A-89CD-444B6CD3D4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F647E42-F863-404A-89CD-444B6CD3D4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F647E42-F863-404A-89CD-444B6CD3D4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
