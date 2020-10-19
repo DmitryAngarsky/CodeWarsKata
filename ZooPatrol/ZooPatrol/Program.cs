@@ -5,10 +5,21 @@ namespace ZooPatrol
 {
     class Program
     {
+        //HashSet<int> animals = new HashSet<int>(array);
+  
+        //foreach (int i in Enumerable.Range(1, array.Length + 1))
+        //{
+        //    if (!animals.Contains(i)) 
+        //    { 
+        //        return i; 
+        //    }
+        //}
+    
+        //return -1;
+
         public static int FindNumber(int[] array)
         {
-            var test = Enumerable.Range(1, array.Length + 1).Except(array);
-            return test.First();
+            return Enumerable.Range(1, array.Length + 1).Except(array).First();
         }
 
         static void Main(string[] args)
