@@ -6,11 +6,12 @@ namespace RemoveParentheses
 {
     class Program
     {
+        // public static string RemoveParentheses(string s)
+        //     => s.Contains('(') ? RemoveParentheses(Regex.Replace(s, @"\([^()]*\)","")) : s;
+        
         public static string RemoveParentheses(string s)
         {
-            var str = s;
-            var result = new Regex(@"\(.*\)").Replace(s, "");
-            return result;
+            return Regex.Replace(s, @"\((?>[^()]+|\((?<Depth>)|\)(?<-Depth>))*(?(Depth)(?!))\)", string.Empty);
         }
         
         static void Main(string[] args)
