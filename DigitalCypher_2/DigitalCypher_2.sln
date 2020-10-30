@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalCypher_2", "DigitalCypher_2\DigitalCypher_2.csproj", "{FBEA0F01-3718-44B4-88F0-DB5928011E6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBEA0F01-3718-44B4-88F0-DB5928011E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBEA0F01-3718-44B4-88F0-DB5928011E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBEA0F01-3718-44B4-88F0-DB5928011E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBEA0F01-3718-44B4-88F0-DB5928011E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {218C7E5C-4C0D-4A44-94D2-775578CDC775}
+	EndGlobalSection
+EndGlobal
