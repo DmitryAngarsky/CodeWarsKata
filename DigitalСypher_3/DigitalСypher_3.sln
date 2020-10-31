@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalСypher_3", "DigitalСypher_3.csproj", "{3567AD0C-77BC-4C68-AEF1-669DCE395508}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3567AD0C-77BC-4C68-AEF1-669DCE395508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3567AD0C-77BC-4C68-AEF1-669DCE395508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3567AD0C-77BC-4C68-AEF1-669DCE395508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3567AD0C-77BC-4C68-AEF1-669DCE395508}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
