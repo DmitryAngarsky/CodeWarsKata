@@ -6,31 +6,41 @@ namespace AlphabetWar
 {
     class Program
     {
-        public static Dictionary<char, int> LeftSide = new Dictionary<char, int>()
+        private static readonly Dictionary<char, int> LeftSide = new Dictionary<char, int>()
         {
             {'w', 4},
             {'p', 3},
             {'b', 2},
             {'s', 1}
         };
-        
-        public static Dictionary<char, int> RightSide = new Dictionary<char, int>()
+
+        private static readonly Dictionary<char, int> RightSide = new Dictionary<char, int>()
         {
             {'m', 4},
             {'q', 3},
             {'d', 2},
             {'z', 1}
         };
+
+        private static int AlphabetSum(string str, Dictionary<char, int> dic) => str.Where(dic.ContainsKey).Sum(a => dic[a]);
         
         public static string AlphabetWar(string fight)
         {
-            var test = fight.Aggregate(0, (c, i) => LeftSide.ContainsKey(i) ? -LeftSide[i] : RightSide[i]);
-            return test == 0 ? "Let's fight again!" : test > 0 ? "Right side wins!" : "Left side wins!";
+            int result = AlphabetSum(fight, RightSide) - AlphabetSum(fight, LeftSide);
+            
+            return result == 0 
+                ? "Let's fight again!" 
+                : result > 0 
+                    ? "Right side wins!" 
+                    : "Left side wins!";
+            
+            var score = fight.Sum(x => "sbpw".IndexOf(x) + 1 + -("zdqm".IndexOf(x) + 1));
+            return score == 0 ? "Let's fight again!" : score < 0 ? "Right side wins!" : "Left side wins!";
         }
         
         static void Main(string[] args)
         {
-            string test = "zdqmwpbs";
+            string test = "wwwwwwz";
             
             Console.WriteLine(AlphabetWar(test));
             Console.ReadKey();
