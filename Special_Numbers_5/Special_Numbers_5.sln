@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Special_Numbers_5", "Special_Numbers_5.csproj", "{9DE75431-7FCE-4C2E-BB36-DFBB091355DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DE75431-7FCE-4C2E-BB36-DFBB091355DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE75431-7FCE-4C2E-BB36-DFBB091355DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE75431-7FCE-4C2E-BB36-DFBB091355DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE75431-7FCE-4C2E-BB36-DFBB091355DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
